@@ -36,6 +36,6 @@ public class SauceExtraTest {
 
         sauce.sumExtras(order);
         assertEquals(1.00d, order.getTotal(), 0.1d);
-    }    
-    
+    }
+
 }
