@@ -11,5 +11,9 @@ public interface Comanda {
 
     List<Item> itemList();
 
+    Double getTotal();
+
+    void updateTotal(Double price);
+
     void display();
 }

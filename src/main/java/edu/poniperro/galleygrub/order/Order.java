@@ -29,6 +29,16 @@ public class Order implements Comanda {
     }
 
     @Override
+    public Double getTotal() {
+        return this.total;
+    }
+
+    @Override
+    public void updateTotal(Double total) {
+        this.total = total;
+    }
+
+    @Override
     public void display() {
         System.out.println("\n\t --- ORDER ---  \n");
         items.stream().forEach(i -> System.out.println("\t" + i));
