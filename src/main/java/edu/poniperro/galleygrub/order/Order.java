@@ -5,6 +5,7 @@ import java.util.List;
 
 import edu.poniperro.galleygrub.items.Item;
 import edu.poniperro.galleygrub.items.ItemFactory;
+import edu.poniperro.galleygrub.items.Prices;
 
 public class Order implements Comanda {
     private Double total;
@@ -41,6 +42,7 @@ public class Order implements Comanda {
     @Override
     public void display() {
         System.out.println("\n\t --- ORDER --- ");
-        items.stream().forEach(i -> System.out.println("\t" + i));
+        items.stream()
+                .forEach(i -> System.out.println("\t" + i + String.format(" + %.2f$", Prices.getPriceOf(i.extra()))));
     }
 }
