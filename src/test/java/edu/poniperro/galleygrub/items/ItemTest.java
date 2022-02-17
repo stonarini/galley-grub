@@ -24,6 +24,7 @@ public class ItemTest {
         Item krabbyMeal = new Item("Krabby Meal", 3.5);
         Item otherKrabbyPatty = new Item("Krabby Patty", 1.25);
         assertFalse(krabbyPatty.equals(krabbyMeal));
+        assertTrue(krabbyPatty.equals(otherKrabbyPatty));
     }
 
 }
