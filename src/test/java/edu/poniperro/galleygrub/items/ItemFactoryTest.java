@@ -26,13 +26,13 @@ public class ItemFactoryTest {
         Item kpatty = ItemFactory.getItem("Krabby Patty", 1.25);
         assertNotNull(kpatty);
 
-        assertEquals("Krabby Patty....1,25$", kpatty.toString());
+        assertEquals("Krabby Patty....1.25$", kpatty.toString());
         assertEquals(1, ItemFactory.size());
 
         Item coral = ItemFactory.getItem("Coral Bits", 1.00);
         assertNotNull(kpatty);
 
-        assertEquals("Coral Bits....1,00$", coral.toString());
+        assertEquals("Coral Bits....1.00$", coral.toString());
         assertNotSame(kpatty, coral);
         assertEquals(2, ItemFactory.size());
     }
@@ -43,7 +43,7 @@ public class ItemFactoryTest {
         Item item = ItemFactory.getItem("Krabby Patty", 1.25);
         assertNotNull(item);
 
-        assertEquals("Krabby Patty....1,25$", item.toString());
+        assertEquals("Krabby Patty....1.25$", item.toString());
         assertEquals(1, ItemFactory.size());
 
         Item itemClon = ItemFactory.getItem("Krabby Patty", 1.25);
@@ -57,13 +57,13 @@ public class ItemFactoryTest {
         Item item = ItemFactory.getItem("Krabby Patty", 1.25, "cheese");
         assertNotNull(item);
 
-        assertEquals("Krabby Patty w/ cheese....1,25$", item.toString());
+        assertEquals("Krabby Patty w/ cheese....1.25$", item.toString());
         assertEquals(1, ItemFactory.size());
 
         item = ItemFactory.getItem("Coral Bits", 1.00, "medium");
         assertNotNull(item);
 
-        assertEquals("Coral Bits w/ medium....1,00$", item.toString());
+        assertEquals("Coral Bits w/ medium....1.00$", item.toString());
         assertEquals(2, ItemFactory.size());
     }
 
