@@ -4,6 +4,7 @@ import edu.poniperro.galleygrub.extras.Extra;
 import edu.poniperro.galleygrub.order.Comanda;
 
 public class Receipt implements Ticket {
+    private Double total;
     private Comanda comanda;
     private Extra firstExtra;
 
@@ -28,12 +29,14 @@ public class Receipt implements Ticket {
 
     @Override
     public Double total() {
-        return comanda.getTotal();
+        total = comanda.getTotal();
+        return this.total;
     }
 
     @Override
     public void sumExtrasCharge() {
         firstExtra.sumExtras(comanda);
+        this.total = comanda.getTotal();
     }
 
     @Override
