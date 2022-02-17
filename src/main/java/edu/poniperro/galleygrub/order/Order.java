@@ -43,6 +43,7 @@ public class Order implements Comanda {
     public void display() {
         System.out.println("\n\t --- ORDER --- ");
         items.stream()
-                .forEach(i -> System.out.println("\t" + i + String.format(" + %.2f$", Prices.getPriceOf(i.extra()))));
+                .forEach(i -> System.out.println("\t" + i +
+                        String.format(" + %.2f$", Prices.getPriceOf(i.extra()))));
     }
 }
