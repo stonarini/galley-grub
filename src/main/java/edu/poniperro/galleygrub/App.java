@@ -9,8 +9,8 @@ package edu.poniperro.galleygrub;
 import edu.poniperro.galleygrub.items.Item;
 import edu.poniperro.galleygrub.items.Prices;
 import edu.poniperro.galleygrub.items.Product;
-// import edu.poniperro.galleygrub.order.Comanda;
-// import edu.poniperro.galleygrub.order.Order;
+import edu.poniperro.galleygrub.order.Comanda;
+import edu.poniperro.galleygrub.order.Order;
 // import edu.poniperro.galleygrub.receipt.Receipt;
 // import edu.poniperro.galleygrub.receipt.Ticket;
 
@@ -110,15 +110,15 @@ public class App {
          * ahorrando asi memoria.
          */
 
-        // Comanda order = new Order();
+        Comanda order = new Order();
 
-        // order.addItem("Krabby Patty", 1.25);
-        // order.addItem("Coral Bits", 1.00);
-        // order.addItem("Kelp Rings", 1.50);
-        // order.addItem("Golden Loaf", 2.00);
-        // order.addItem("Seafoam Soda", 1.00);
+        order.addItem("Krabby Patty", 1.25);
+        order.addItem("Coral Bits", 1.00);
+        order.addItem("Kelp Rings", 1.50);
+        order.addItem("Golden Loaf", 2.00);
+        order.addItem("Seafoam Soda", 1.00);
 
-        // order.display();
+        order.display();
 
         /**
          * Squidward Tentacles genera el recibo,
