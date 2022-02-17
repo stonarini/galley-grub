@@ -1,6 +1,6 @@
 package edu.poniperro.galleygrub.order;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +24,6 @@ public class OrderTest {
     public void addItemToOrderTest() {
         order.addItem("Krabby Patty", 1.25);
         order.addItem("Salty Sea Dog", 1.25);
-        assertArrayEquals(items, order.itemList());
+        assertEquals(items, order.itemList());
     }
 }
