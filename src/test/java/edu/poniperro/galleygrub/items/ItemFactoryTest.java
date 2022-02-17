@@ -57,13 +57,13 @@ public class ItemFactoryTest {
         Item item = ItemFactory.getItem("Krabby Patty", 1.25, "cheese");
         assertNotNull(item);
 
-        assertEquals("Krabby Patty w/ cheese....1.25$", item.toString());
+        assertEquals("Krabby Patty w/ cheese....1.25$ + 0.25$", item.toString());
         assertEquals(1, ItemFactory.size());
 
         item = ItemFactory.getItem("Coral Bits", 1.00, "medium");
         assertNotNull(item);
 
-        assertEquals("Coral Bits w/ medium....1.00$", item.toString());
+        assertEquals("Coral Bits w/ medium....1.00$ + 0.25$", item.toString());
         assertEquals(2, ItemFactory.size());
     }
 
