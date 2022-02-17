@@ -34,4 +34,19 @@ public class Item implements Product {
     public Boolean isRegular() {
         return extra() == null ? true : false;
     }
+
+    @Override
+    public String toString() {
+        return name() + "...." + price() + "$";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Item ? this.name.equals(((Item) obj).name()) : false;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.name.hashCode();
+    }
 }
