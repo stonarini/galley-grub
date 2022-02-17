@@ -11,8 +11,8 @@ import edu.poniperro.galleygrub.items.Prices;
 import edu.poniperro.galleygrub.items.Product;
 import edu.poniperro.galleygrub.order.Comanda;
 import edu.poniperro.galleygrub.order.Order;
-// import edu.poniperro.galleygrub.receipt.Receipt;
-// import edu.poniperro.galleygrub.receipt.Ticket;
+import edu.poniperro.galleygrub.receipt.Receipt;
+import edu.poniperro.galleygrub.receipt.Ticket;
 
 /**
  * 
@@ -126,9 +126,9 @@ public class App {
          * y lo muestra en pantalla.
          */
 
-        // Ticket receipt = new Receipt(order);
-        // receipt.total();
-        // receipt.print();
+        Ticket receipt = new Receipt(order);
+        receipt.total();
+        receipt.print();
 
         /**
          * Eugene H. Krabs quiere obtener un margen
