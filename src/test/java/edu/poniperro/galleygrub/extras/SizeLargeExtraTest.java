@@ -9,7 +9,7 @@ import edu.poniperro.galleygrub.order.Order;
 import edu.poniperro.galleygrub.receipt.Receipt;
 
 public class SizeLargeExtraTest {
-    
+
     static Receipt receipt;
     static Extra sizeL;
     static Order order;

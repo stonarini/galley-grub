@@ -31,8 +31,8 @@ public class RegularTest {
 
         regular.sumExtras(order);
         assertEquals(6.75d, order.getTotal(), 0.1d);
-    } 
-    
+    }
+
     @Test
     public void sum_regular_test() {
 

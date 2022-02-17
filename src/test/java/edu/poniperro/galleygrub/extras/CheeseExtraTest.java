@@ -36,5 +36,5 @@ public class CheeseExtraTest {
 
         cheese.sumExtras(order);
         assertEquals(0.25d, order.getTotal(), 0.1d);
-    }    
+    }
 }
