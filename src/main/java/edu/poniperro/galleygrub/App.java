@@ -147,16 +147,16 @@ public class App {
 
         System.out.print("\n\t --- GALLEY GRUB ---  \n");
 
-        // patty = new Item("Krabby Patty", 1.25, "cheese");
-        // display(patty);
-        // bits = new Item("Coral Bits", 1.00, "medium");
-        // display(bits);
-        // rings = new Item("Kelp Rings", 1.50, "sauce");
-        // display(rings);
-        // loaf = new Item("Golden Loaf", 2.00, "sauce");
-        // display(loaf);
-        // soda = new Item("Seafoam Soda", 1.00, "large");
-        // display(soda);
+        patty = new Item("Krabby Patty", 1.25, "cheese");
+        display(patty);
+        bits = new Item("Coral Bits", 1.00, "medium");
+        display(bits);
+        rings = new Item("Kelp Rings", 1.50, "sauce");
+        display(rings);
+        loaf = new Item("Golden Loaf", 2.00, "sauce");
+        display(loaf);
+        soda = new Item("Seafoam Soda", 1.00, "large");
+        display(soda);
 
         /**
          * Buble Fish sigue zampando
