@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.poniperro.galleygrub.items.Item;
+import edu.poniperro.galleygrub.items.ItemFactory;
 
 public class Order implements Comanda {
     private Double total;
@@ -25,5 +26,11 @@ public class Order implements Comanda {
     @Override
     public List<Item> itemList() {
         return this.items;
+    }
+
+    @Override
+    public void display() {
+        System.out.println("\n\t --- ORDER ---  \n");
+        items.stream().forEach(i -> System.out.println("\t" + i));
     }
 }
