@@ -40,7 +40,7 @@ public class Order implements Comanda {
 
     @Override
     public void display() {
-        System.out.println("\n\t --- ORDER ---  \n");
+        System.out.println("\n\t --- ORDER --- ");
         items.stream().forEach(i -> System.out.println("\t" + i));
     }
 }
