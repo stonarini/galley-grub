@@ -8,6 +8,7 @@ public class Item implements Product {
     public Item(String name, Double price) {
         this.name = name;
         this.price = price;
+        Prices.init_prices();
     }
 
     public Item(String name, Double price, String extra) {
@@ -37,7 +38,11 @@ public class Item implements Product {
 
     @Override
     public String toString() {
-        return String.format("%s....%.2f$", name(), price());
+        if (isRegular()) {
+            return String.format("%s....%.2f$", name(), price());
+        } else {
+            return String.format("%s w/ %s....%.2f$ + %.2f$", name(), extra(), price(), Prices.getPriceOf(extra()));
+        }
     }
 
     @Override
