@@ -8,7 +8,7 @@ import edu.poniperro.galleygrub.items.ItemFactory;
 import edu.poniperro.galleygrub.items.Prices;
 
 public class Order implements Comanda {
-    private Double total;
+    private Double total = 0.0;
     private final List<Item> items = new ArrayList<Item>();
 
     public Order() {
@@ -36,14 +36,21 @@ public class Order implements Comanda {
 
     @Override
     public void updateTotal(Double total) {
-        this.total = total;
+        this.total += total;
     }
 
     @Override
     public void display() {
         System.out.println("\n\t --- ORDER --- ");
-        items.stream()
-                .forEach(i -> System.out.println("\t" + i +
-                        String.format(" + %.2f$", Prices.getPriceOf(i.extra()))));
+        items.stream().forEach(i -> itemDisplay(i));
+    }
+
+    private void itemDisplay(Item i) {
+        System.out.print("\t" + i);
+        if (!i.isRegular()) {
+            System.out.print(String.format(" + %.2f$", Prices.getPriceOf(i.extra())));
+        }
+        System.out.println();
+
     }
 }
