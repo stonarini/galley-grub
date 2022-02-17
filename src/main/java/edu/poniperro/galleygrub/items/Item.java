@@ -41,7 +41,7 @@ public class Item implements Product {
         if (isRegular()) {
             return String.format("%s....%.2f$", name(), price());
         } else {
-            return String.format("%s w/ %s....%.2f$ + %.2f$", name(), extra(), price(), Prices.getPriceOf(extra()));
+            return String.format("%s w/ %s....%.2f$", name(), extra(), price());
         }
     }
 
