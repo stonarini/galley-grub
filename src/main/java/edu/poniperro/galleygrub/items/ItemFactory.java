@@ -16,7 +16,7 @@ public class ItemFactory {
     public static Item getItem(String name, Double price, String extra) {
         String key = name + " " + extra;
         if (!itemMap.containsKey(key)) {
-            itemMap.put(key, new Item(name, price));
+            itemMap.put(key, new Item(name, price, extra));
         }
         return itemMap.get(key);
     }
