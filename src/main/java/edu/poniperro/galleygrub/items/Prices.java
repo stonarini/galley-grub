@@ -10,8 +10,12 @@ public class Prices {
         products.putAll(Map.of(
                 "large", 0.5,
                 "sauce", 0.5,
-                "medium", 0.5,
-                "cheese", 0.5));
+                "medium", 0.25,
+                "cheese", 0.25));
+    }
+
+    public static double getPriceOf(String name) {
+        return products.get(name);
     }
 
     public static void display() {
