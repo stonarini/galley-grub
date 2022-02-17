@@ -20,6 +20,12 @@ public class ItemTest {
     }
 
     @Test
+    public void isNotRegularItemTest() {
+        Item krabbyPattyWithCheese = new Item("Krabby Patty", 1.25, "cheese");
+        assertFalse(krabbyPattyWithCheese.isRegular());
+    }
+
+    @Test
     public void itemEqualsItemTest() {
         Item krabbyMeal = new Item("Krabby Meal", 3.5);
         Item otherKrabbyPatty = new Item("Krabby Patty", 1.25);
