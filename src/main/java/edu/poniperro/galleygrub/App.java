@@ -164,18 +164,18 @@ public class App {
          * de extras.
          */
 
-        // order = new Order();
+        order = new Order();
 
-        // order.addItem("Krabby Patty", 1.25, "cheese");
-        // order.addItem("Coral Bits", 1.00);
-        // order.addItem("Kelp Rings", 1.50, "sauce");
-        // order.addItem("Golden Loaf", 2.00, "sauce");
-        // order.addItem("Seafoam Soda", 1.00, "large");
-        // order.addItem("Coral Bits", 1.00, "large");
+        order.addItem("Krabby Patty", 1.25, "cheese");
+        order.addItem("Coral Bits", 1.00);
+        order.addItem("Kelp Rings", 1.50, "sauce");
+        order.addItem("Golden Loaf", 2.00, "sauce");
+        order.addItem("Seafoam Soda", 1.00, "large");
+        order.addItem("Coral Bits", 1.00, "large");
 
-        // // Utiliza el diccionario Prices para incluir
-        // // el precio de los extras en la salida por consola.
-        // order.display();
+        // Utiliza el diccionario Prices para incluir
+        // el precio de los extras en la salida por consola.
+        order.display();
 
         /**
          * Define el importe a cargar por cada extra.
