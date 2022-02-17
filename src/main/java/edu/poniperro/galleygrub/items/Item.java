@@ -15,4 +15,23 @@ public class Item implements Product {
         this.extra = extra;
     }
 
+    @Override
+    public String name() {
+        return this.name;
+    }
+
+    @Override
+    public Double price() {
+        return this.price;
+    }
+
+    @Override
+    public String extra() {
+        return this.extra;
+    }
+
+    @Override
+    public Boolean isRegular() {
+        return extra() == null ? true : false;
+    }
 }
