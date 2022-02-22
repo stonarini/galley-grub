@@ -12,5 +12,5 @@ LABEL "edu.poniperro.galley-grub"="galley-grub"
 LABEL version=1.0-SNAPSHOT
 LABEL mantainer="stonarini@cifpfbmoll.eu"
 
-COPY --from=build /home/app/target/galley-grub-1.0-SNAPSHOT.jar /usr/local/lib/galley-grub.jar
-CMD ["java","-jar","/usr/local/lib/galley-grub.jar"]
+COPY --from=build /home/app/target/galleygrub-1.0-SNAPSHOT.jar /usr/local/lib/galleygrub.jar
+CMD ["java","-jar","/usr/local/lib/galleygrub.jar"]

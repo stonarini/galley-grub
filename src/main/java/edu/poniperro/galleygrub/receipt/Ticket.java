@@ -6,7 +6,7 @@ import edu.poniperro.galleygrub.order.Comanda;
 public interface Ticket {
     public Comanda getOrder();
 
-    public void setChain(Extra firsExtra);
+    public void setChain(Extra firstExtra);
 
     public Extra getChain();
 

@@ -85,6 +85,6 @@ public class ReceiptTest {
         receipt.setChain(regular);
         assertNotNull(receipt.getChain());
 
-        // assertEquals(10.0d, receipt.total(), 0.1);
+        assertEquals(10.0d, receipt.total(), 0.1);
     }
 }

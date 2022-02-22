@@ -29,8 +29,11 @@ public class Receipt implements Ticket {
 
     @Override
     public Double total() {
-        total = comanda.getTotal();
+        if (this.firstExtra != null) {
+            sumExtrasCharge();
+        }
         return this.total;
+
     }
 
     @Override
@@ -42,7 +45,7 @@ public class Receipt implements Ticket {
     @Override
     public void print() {
         this.comanda.display();
-        System.out.println(String.format("\tTOTAL --------> %.2f$", total() != null ? total() : 0.00));
+        System.out.println(String.format("\tTOTAL --------> %.2f$", this.total != null ? this.total : 0.00));
     }
 
 }
