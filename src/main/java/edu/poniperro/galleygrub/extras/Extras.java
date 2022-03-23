@@ -14,8 +14,4 @@ public enum Extras {
     public Double getPrice() {
         return this.price;
     }
-
-    public String lowercaseName() {
-        return this.name().toLowerCase();
-    }
 }
