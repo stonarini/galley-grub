@@ -21,10 +21,8 @@ public class ExtrasTest {
     @Test
     public void testExtrasName() {
         assertEquals(Extras.CHEESE.name(), extras.get(Extras.CHEESE.ordinal()));
-        assertEquals(Extras.CHEESE.lowercaseName(), extras.get(Extras.CHEESE.ordinal()).toLowerCase());
 
         assertEquals(Extras.LARGE.name(), extras.get(Extras.LARGE.ordinal()));
-        assertEquals(Extras.LARGE.lowercaseName(), extras.get(Extras.LARGE.ordinal()).toLowerCase());
     }
 
     @Test
