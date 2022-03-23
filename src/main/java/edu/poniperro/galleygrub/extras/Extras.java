@@ -5,13 +5,13 @@ public enum Extras {
     SAUCE(0.5),
     LARGE(0.5);
 
-    private final double price;
+    private final Double price;
 
-    private Extras(double price) {
+    private Extras(Double price) {
         this.price = price;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return this.price;
     }
 
