@@ -11,6 +11,7 @@ public class CheeseExtra extends Extra {
     @Override
     public void sumExtras(Comanda comanda) {
         Optional<Double> cheeseTotal = comanda.itemList().stream()
+                .filter(i -> i.extra() != null)
                 .filter(i -> i.extra().equalsIgnoreCase(Extras.CHEESE.name()))
                 .map(i -> Extras.CHEESE.getPrice())
                 .reduce(Double::sum);

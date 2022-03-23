@@ -11,6 +11,7 @@ public class SizeLargeExtra extends Extra {
     @Override
     public void sumExtras(Comanda comanda) {
         Optional<Double> sizeLargeTotal = comanda.itemList().stream()
+                .filter(i -> i.extra() != null)
                 .filter(i -> i.extra().equalsIgnoreCase(Extras.LARGE.name()))
                 .map(i -> Extras.LARGE.getPrice())
                 .reduce(Double::sum);

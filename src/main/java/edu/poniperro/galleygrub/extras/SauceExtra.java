@@ -11,6 +11,7 @@ public class SauceExtra extends Extra {
     @Override
     public void sumExtras(Comanda comanda) {
         Optional<Double> sauceTotal = comanda.itemList().stream()
+                .filter(i -> i.extra() != null)
                 .filter(i -> i.extra().equalsIgnoreCase(Extras.SAUCE.name()))
                 .map(i -> Extras.SAUCE.getPrice())
                 .reduce(Double::sum);
